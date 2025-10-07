@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'MyFonts';
+    src: url(fonts/Norse-Bold.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -17,4 +24,40 @@ body {
     display: flex;
     flex: 1;
     flex-direction: column;
+}
+
+.left {
+    position: relative;
+    width: 100%;
+}
+
+.card-body {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    top: 16rem;
+    text-align: center;
+    font-size: 3em;
+}
+
+.logo {
+    font-family: 'MyFonts';
+    opacity: 1;
+    font-weight: bolder;
+}
+
+.left-image {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.odin-logo {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    margin-top: 1.5rem;
 }
