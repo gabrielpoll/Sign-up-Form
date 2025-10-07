@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.left {
+    display: flex;
+    flex: 1;
+}
+
+.right {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
