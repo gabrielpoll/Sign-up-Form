@@ -10,6 +10,12 @@ body {
     font-family: Arial, sans-serif;
 }
 
+a {
+    color: #596D48;
+    text-decoration: none;
+
+}
+
 .container {
     display: flex;
     height: 100vh;
@@ -18,6 +24,8 @@ body {
 .left {
     display: flex;
     flex: 1;
+    position: relative;
+    width: 100%;
 }
 
 .right {
@@ -26,10 +34,23 @@ body {
     flex-direction: column;
 }
 
-.left {
-    position: relative;
-    width: 100%;
+.top-container {
+    padding: 2rem;
 }
+
+input {
+    border-color: #E5E7EB;
+    width: 250px;
+    border-radius: 5px;
+    height: 25px;
+}
+
+label {
+    color: #3c424a;
+    font-weight: 800;
+    font-family: 'Trebuchet MS', sans-serif
+}
+
 
 .card-body {
     display: flex;
@@ -53,6 +74,8 @@ body {
     position: absolute;
     width: 100%;
     z-index: -1;
+    height: 100%;
+    object-fit: cover;
 }
 
 .odin-logo {
@@ -60,4 +83,65 @@ body {
     height: 180px;
     object-fit: contain;
     margin-top: 1.5rem;
+}
+
+.submit-button {
+    font-size: 1.3rem;
+    background-color: #596D48;
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+    padding: 10px 30px 10px 30px;
+}
+
+.top-text {
+    padding-top: 8rem ;
+}
+
+.bottom-container {
+    height: auto;
+    padding-left: 3rem;
+    padding-top: 3rem;
+}
+
+.form-container {
+    padding-left: 3rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background-color: white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); 
+    margin-bottom: 2rem;
+    padding: 2rem;
+
+}
+
+.name-and-lastname,
+.email-phone,
+.password-confirmpassword {
+    padding-top: 10px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 50px;
+    width: 600px;
+}
+
+#first_name:focus,
+#last_name:focus,
+#user_email:focus,
+#user_phone_number:focus,
+#user_password:focus,
+#confirm_password:focus {
+    outline: none;
+    border: 2px solid;
+    border-color: rgb(0, 89, 255);
+}
+
+#user_password:invalid,
+#confirm_password:invalid {
+    border: 2px solid red;
+    outline: none;
 }
